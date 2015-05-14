@@ -7,7 +7,7 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-		meta(name="description", content="")
+		meta(name="description", content="Philippe Sawicki's online Project portfolio, including 'Google Analytics Web Tester' and other Digital Analytics tools.")
 		meta(name="author", content="Philippe Sawicki")
 
 		link(rel="shortcut icon", href="favicon.ico")
@@ -19,9 +19,29 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 		link(rel="stylesheet", href="public/css/styles.css")
 
 	body
+
+		script(type="text/javascript").
+			if (location.hostname === 'localhost') {
+				(function (w) {
+					w.ga = function () {};
+				})(window);
+			} else {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			}
+			ga('create', {
+				trackingId: 'UA-60737019-4',
+				cookieDomain: 'auto', 
+				siteSpeedSampleRate: 100
+			});
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+
 		header.header.shadow-z-2
 			div.container
-				img(class="profile-image img-responsive pull-left round-frame shadow-z-1", src="http://www.musicismysanctuary.com/wp-content/uploads/2013/08/d1bdd91826d74e909ab187076de3d084.jpeg", alt="Philippe Sawicki - Full Stack Developer & Digital Analyst", title="Philippe Sawicki - Full Stack Developer & Digital Analyst", width="180", height="180")
+				img(class="profile-image img-responsive pull-left round-frame shadow-z-1", src="public/img/portrait.jpg", alt="Philippe Sawicki - Full Stack Developer & Digital Analyst", title="Philippe Sawicki - Full Stack Developer & Digital Analyst", width="180", height="180")
 				div(class="profile-content pull-left")
 					h1.name Philippe Sawicki
 					h2.desc Full Stack Developer & Digital Analyst
