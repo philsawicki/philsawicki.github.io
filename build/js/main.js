@@ -13,12 +13,18 @@ jQuery(document).ready(function ($) {
         });
     });
     
-    /* Bootstrap Tooltip for Skillset */
+
+    /**
+     * Bootstrap Tooltip for Skillset
+     */
     if (typeof $.fn.tooltip !== 'undefined') {
         $('.level-label').tooltip();
     }
     
-    /* jQuery RSS - https://github.com/sdepold/jquery-rss */
+
+    /**
+     * jQuery RSS - https://github.com/sdepold/jquery-rss
+     */
     if (typeof $.fn.rss !== 'undefined') {
         $("#rss-feeds").rss(
             // Change this to your own rss feeds
@@ -48,11 +54,47 @@ jQuery(document).ready(function ($) {
         );
     }
     
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
+
+    /**
+     * Github Activity Feed - https://github.com/caseyscarborough/github-activity
+     */
     if (typeof GitHubActivity !== 'undefined') {
         GitHubActivity.feed({
             username: 'caseyscarborough',
             selector: '#ghfeed'
+        });
+    }
+
+
+    /**
+     * Lazy-load images.
+     */
+    var imagesToLoad = $('.img-lazy-load');
+    if (imagesToLoad.length > 0) {
+        for (var i = 0, nbImagesToLoad = imagesToLoad.length; i < nbImagesToLoad; i++) {
+            var imageToLoad = $(imagesToLoad[i]);
+            var imageSrc = imageToLoad.data('src');
+            imageToLoad.attr('src', imageSrc);
+        }
+    }
+
+
+    /**
+     * Track outbound links.
+     */
+    var outboundLinks = $('.js-ga-outbound-link');
+    if (outboundLinks.length > 0) {
+        $('.js-ga-outbound-link').on('click', function (event) {
+            if (!ga.q) {
+                event.preventDefault();
+                
+                var destinationLink = $(this).attr('href');
+                ga('send', 'event', 'Outbound Link', 'Click', destinationLink, {
+                    'hitCallback': function () {
+                        window.location = destinationLink;
+                    }
+                });
+            }
         });
     }
 });

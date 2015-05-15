@@ -46,13 +46,13 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 					h1.name Philippe Sawicki
 					h2.desc Full Stack Developer & Digital Analyst
 					ul(class="social list-inline")
-						li: a(href="https://github.com/philsawicki", title="Philippe Sawicki on GitHub"): i(class="fa fa-github-alt")
-						li: a(href="http://stackoverflow.com/users/4529476/philippe-sawicki", title="Philippe Sawicki on Stackoverflow"): i(class="fa fa-stack-overflow")
-						li: a(href="https://facebook.com/philippe.sawicki", title="Philippe Sawicki on Facebook"): i(class="fa fa-facebook")
-						li: a(href="https://twitter.com/fyll_s", title="Philippe Sawicki on Twitter"): i(class="fa fa-twitter")
-						li: a(href="https://plus.google.com/+PhilippeSawicki", title="Philippe Sawicki on Google+"): i(class="fa fa-google-plus")
-						li.last-item: a(href="https://linkedin.com/in/philippesawicki", title="Philippe Sawicki on LinkedIn"): i(class="fa fa-linkedin")
-				a(class="btn btn-cta-secondary pull-right", href="http://philippesawicki.com", target="_blank") <!--<i class="fa fa-paper-plane"></i>--> Get in touch
+						li: a(href="https://github.com/philsawicki", title="Philippe Sawicki on GitHub", target="_blank", class="js-ga-outbound-link"): i(class="fa fa-github-alt")
+						li: a(href="http://stackoverflow.com/users/4529476/philippe-sawicki", title="Philippe Sawicki on Stackoverflow", target="_blank", class="js-ga-outbound-link"): i(class="fa fa-stack-overflow")
+						li: a(href="https://facebook.com/philippe.sawicki", title="Philippe Sawicki on Facebook", target="_blank", class="js-ga-outbound-link"): i(class="fa fa-facebook")
+						li: a(href="https://twitter.com/fyll_s", title="Philippe Sawicki on Twitter", target="_blank", class="js-ga-outbound-link"): i(class="fa fa-twitter")
+						li: a(href="https://plus.google.com/+PhilippeSawicki", title="Philippe Sawicki on Google+", target="_blank", class="js-ga-outbound-link"): i(class="fa fa-google-plus")
+						li.last-item: a(href="https://linkedin.com/in/philippesawicki", title="Philippe Sawicki on LinkedIn", target="_blank", class="js-ga-outbound-link"): i(class="fa fa-linkedin")
+				a(class="btn btn-cta-secondary pull-right js-ga-outbound-link", href="http://philippesawicki.com", target="_blank") <!--<i class="fa fa-paper-plane"></i>--> Get in touch
 
 		div(class="container sections-wrapper")
 			div.row
@@ -71,24 +71,26 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 
 								p I believe it is the collective efforts of a well-balanced, creative team that makes a product stand out, while making the day-to-day tasks more fulfilling as everyone gets time to shine and learn from the common knowledge and experience of the group. Passionate people who love their jobs bring people together to move forward, and it is in that environment that people excel.
 
-					//section(class="latest section shadow-z-1")
+					section(class="latest section shadow-z-1")
 						div.section-inner
-							h2.heading Latest Projects
+							h2.heading Latest Project
 							div.content
 								div(class="item featured text-center")
 									h3.title
-										a(href="#", target="_blank") KickStarter - Velocity
-									p.summary A responsive Bootstrap template designed for digital products
+										a(href="https://philsawicki.github.io/GoogleAnalytics-WebTester/", class="js-ga-outbound-link", target="_blank", title="Google Analytics Web Tester") Google Analytics Web Tester
+									p.summary A Protractor framework for Functional Testing of Google Analytics implementations
 									div.featured-image
-										a(href="#", target="_blank")
-											img(class="img-responsive project-image", src="assets/images/projects/project-featured.png", alt="Project Name")
-										div.ribbon
+										a(href="https://philsawicki.github.io/GoogleAnalytics-WebTester/", class="js-ga-outbound-link", target="_blank", title="Google Analytics Web Tester")
+											img(class="img-responsive project-image", src="https://raw.githubusercontent.com/philsawicki/GoogleAnalytics-WebTester/gh-pages/images/screenshot-home.png", width="690", height="521", alt="Google Analytics Web Tester", title="Google Analytics Web Tester")
+										//div.ribbon
 											div.text New
 									div(class="desc text-left")
-										p You can promote your main project here.
-									a(class="btn btn-cta-secondary", href="#", target="_blank"): <i class="fa fa-thumbs-o-up"></i> Back my project
-								hr.divider
-								div(class="item row")
+										p Testing proper implementation of Google Analytics Tracking on a website can be a tricky thing to do. Unless you run a daily gamut of tests during and after development, what works one day may be broken the next one without you ever noticing.
+
+										p To prevent that, <strong>Google Analytics Web Tester</strong> was created.
+									a(class="btn btn-cta-secondary js-ga-outbound-link", href="https://philsawicki.github.io/GoogleAnalytics-WebTester/", target="_blank", title="More information on Google Analytics Web Tester"): <!--<i class="fa fa-thumbs-o-up"></i>--> Visit Project site
+								//hr.divider
+								//div(class="item row")
 									a(class="col-md-4 col-sm-4 col-xs-12", href="#")
 										img(class="img-responsive project-image", src="assets/images/projects/project-5.png", alt="project name")
 									div(class="desc col-md-8 col-sm-8 col-xs-12")
@@ -133,7 +135,7 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 								ul.list-unstyled
 									li <i class="fa fa-map-marker"></i><span class="sr-only">Location:</span> Montreal, Canada
 									//li <i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a>
-									li <i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://philippesawicki.com" title="Philippe Sawicki - Full Stack Developer & Digital Analyst" rel="me">http://philippesawicki.com</a>
+									li <i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://philippesawicki.com" class="js-ga-outbound-link" title="Philippe Sawicki - Full Stack Developer & Digital Analyst" rel="me">philippesawicki.com</a>
 
 					//aside(class="skills aside section shadow-z-1")
 						div.section-inner
@@ -152,7 +154,40 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 									p
 										a.more-link(href="https://linkedin.com/in/philippesawicki", title="Philippe Sawicki on LinkedIn", target="_blank") <i class="fa fa-external-link"></i> More on LinkedIn
 
+					aside(class="experience aside section shadow-z-1")
+						div.section-inner
+							h2.heading Work Experience
+							div.content
+								div.item
+									h3.title Solution Developer & Digital Analyst
+									h3.title <span class="place">Orckestra Inc.</span> <span class="year">(2011 - Present)</span>
+									//p Aenea leo ligula
+								//div.item
+									h3.title Web Designer & Developer, SEO & Web Analytics
+									h3.title <span class="place">Freelance</span> <span class="year">(2001 - Present)</span>
+									//p Aenea leo ligula
+								div.item
+									h3.title Developer (Internship)
+									h3.title <span class="place">Ericsson Montreal</span> <span class="year">(2010)</span>
+									//p Aenea leo ligula
+								div.item
+									h3.title Analyst, Architect & Developer (Internship)
+									h3.title <span class="place">CHU Sainte-Justine Research Centre</span> <span class="year">(2009)</span>
+									//p Aenea leo ligula
+								p.text-center: a(href="https://linkedin.com/in/philippesawicki" target="_blank" class="js-ga-outbound-link" title="Philippe Sawicki on LinkedIn" class="btn btn-cta-secondary") More on LinkedIn
+
 					aside(class="education aside section shadow-z-1")
+						div.section-inner
+							h2.heading Education
+							div.content
+								div.item
+									h3.title B.Sc. Computer Science
+									h4.university(style="padding-left:0;") Polytechnique Montréal <span class="year">(2006-2010)</span>
+								div.item
+									h3.title DEC Natural Sciences
+									h4.university(style="padding-left:0;") Jean-de-Brébeuf College <span class="year">(2004-2006)</span>
+
+					//aside(class="education aside section shadow-z-1")
 						div.section-inner
 							h2.heading Education
 							div.content
@@ -183,7 +218,7 @@ html(itemscope="", itemtype="http://schema.org/Article", lang="en")
 
 		footer.footer
 			div(class="container text-center")
-				small.copyright &copy; Copyright 2015 <a href="http://philippesawicki.com" title="Philippe Sawicki - Full Stack Developer & Digital Analyst" rel="me">Philippe Sawicki</a>
+				small.copyright &copy; Copyright 2015 <a href="http://philippesawicki.com" class="js-ga-outbound-link" title="Philippe Sawicki - Full Stack Developer & Digital Analyst" rel="me">Philippe Sawicki</a>
 
 		script(type="application/ld+json").
 			[
