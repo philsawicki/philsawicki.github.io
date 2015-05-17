@@ -63,6 +63,7 @@ gulp.task('sitemap', function () {
 gulp.task('js', function () {
     var javaScriptFiles = [
         //'./build/js/jquery.rss.js',
+        './build/js/analytics.js',
         './build/js/main.js'
     ];
 

@@ -1,7 +1,15 @@
-jQuery(document).ready(function ($) {
+if (typeof Analytics !== 'undefined' && typeof Analytics.initialize === 'function') {
+    // Initialize Analytics Module:
+    Analytics.initialize();
+}
 
-    /*======= Skillset *=======*/
-    $('.level-bar-inner').css('width', '0');
+
+//jQuery(document).ready(function ($) {
+
+    /**
+     * Skillset
+     */
+    /*$('.level-bar-inner').css('width', '0');
     
     $(window).on('load', function () {
         $('.level-bar-inner').each(function () {
@@ -11,21 +19,21 @@ jQuery(document).ready(function ($) {
                 width: itemWidth
             }, 800);
         });
-    });
+    });*/
     
 
     /**
      * Bootstrap Tooltip for Skillset
      */
-    if (typeof $.fn.tooltip !== 'undefined') {
+    /*if (typeof $.fn.tooltip !== 'undefined') {
         $('.level-label').tooltip();
-    }
+    }*/
     
 
     /**
      * jQuery RSS - https://github.com/sdepold/jquery-rss
      */
-    if (typeof $.fn.rss !== 'undefined') {
+    /*if (typeof $.fn.rss !== 'undefined') {
         $("#rss-feeds").rss(
             // Change this to your own rss feeds
             "http://feeds.feedburner.com/TechCrunch/startups",
@@ -52,36 +60,37 @@ jQuery(document).ready(function ($) {
             
             }
         );
-    }
+    }*/
     
 
     /**
      * Github Activity Feed - https://github.com/caseyscarborough/github-activity
      */
-    if (typeof GitHubActivity !== 'undefined') {
+    /*if (typeof GitHubActivity !== 'undefined') {
         GitHubActivity.feed({
             username: 'caseyscarborough',
             selector: '#ghfeed'
         });
-    }
+    }*/
 
 
     /**
      * Lazy-load images.
      */
-    var imagesToLoad = $('.img-lazy-load');
+    /*var imagesToLoad = $('.img-lazy-load');
     if (imagesToLoad.length > 0) {
         for (var i = 0, nbImagesToLoad = imagesToLoad.length; i < nbImagesToLoad; i++) {
             var imageToLoad = $(imagesToLoad[i]);
             var imageSrc = imageToLoad.data('src');
             imageToLoad.attr('src', imageSrc);
         }
-    }
+    }*/
 
 
     /**
      * Track outbound links.
      */
+    /*
     var outboundLinks = $('.js-ga-outbound-link');
     if (outboundLinks.length > 0) {
         $('.js-ga-outbound-link').on('click', function (event) {
@@ -96,5 +105,5 @@ jQuery(document).ready(function ($) {
                 });
             }
         });
-    }
-});
+    }*/
+//});
