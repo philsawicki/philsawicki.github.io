@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+sitemap: https://philsawicki.github.io/sitemap.xml
+sitemap: https://philsawicki.github.io/GoogleAnalytics-WebTester/sitemap.xml

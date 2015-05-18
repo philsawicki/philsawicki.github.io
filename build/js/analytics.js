@@ -1,16 +1,6 @@
-var Analytics = (function (window, document, undefined) {
+(function (window, document, undefined) {
     'use strict';
-	
-    /**
-     * Initialize the Module.
-     *
-     * @return {void}
-     * @public
-     */
-    var initialize = function () {
-        _trackLinksAndButtons();
-        _trackOutboundLinks();
-    };
+
 
     /**
      * Track on-page links & Buttons.
@@ -137,7 +127,16 @@ var Analytics = (function (window, document, undefined) {
     };
 
 
-    return {
-        initialize: initialize
+
+    /**
+     * Initialize the Module.
+     *
+     * @return {void}
+     * @public
+     */
+    var initialize = function () {
+        _trackLinksAndButtons();
+        _trackOutboundLinks();
     };
+    initialize();
 })(window, document);

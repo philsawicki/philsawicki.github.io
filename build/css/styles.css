@@ -1,3 +1,45 @@
+/**
+ * FontAwesome.
+ * http://dopiaza.org/tools/datauri/index.php
+ */
+/*.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.fa-github-alt:before {
+  content: "\f113";
+  background-image: url("data:image/svg+xml;charset=utf-8,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03MDQgMTIxNnEwIDQwLTEyLjUgODJ0LTQzIDc2LTcyLjUgMzQtNzIuNS0zNC00My03Ni0xMi41LTgyIDEyLjUtODIgNDMtNzYgNzIuNS0zNCA3Mi41IDM0IDQzIDc2IDEyLjUgODJ6bTY0MCAwcTAgNDAtMTIuNSA4MnQtNDMgNzYtNzIuNSAzNC03Mi41LTM0LTQzLTc2LTEyLjUtODIgMTIuNS04MiA0My03NiA3Mi41LTM0IDcyLjUgMzQgNDMgNzYgMTIuNSA4MnptMTYwIDBxMC0xMjAtNjktMjA0dC0xODctODRxLTQxIDAtMTk1IDIxLTcxIDExLTE1NyAxMXQtMTU3LTExcS0xNTItMjEtMTk1LTIxLTExOCAwLTE4NyA4NHQtNjkgMjA0cTAgODggMzIgMTUzLjV0ODEgMTAzIDEyMiA2MCAxNDAgMjkuNSAxNDkgN2gxNjhxODIgMCAxNDktN3QxNDAtMjkuNSAxMjItNjAgODEtMTAzIDMyLTE1My41em0yMjQtMTc2cTAgMjA3LTYxIDMzMS0zOCA3Ny0xMDUuNSAxMzN0LTE0MSA4Ni0xNzAgNDcuNS0xNzEuNSAyMi0xNjcgNC41cS03OCAwLTE0Mi0zdC0xNDcuNS0xMi41LTE1Mi41LTMwLTEzNy01MS41LTEyMS04MS04Ni0xMTVxLTYyLTEyMy02Mi0zMzEgMC0yMzcgMTM2LTM5Ni0yNy04Mi0yNy0xNzAgMC0xMTYgNTEtMjE4IDEwOCAwIDE5MCAzOS41dDE4OSAxMjMuNXExNDctMzUgMzA5LTM1IDE0OCAwIDI4MCAzMiAxMDUtODIgMTg3LTEyMXQxODktMzlxNTEgMTAyIDUxIDIxOCAwIDg3LTI3IDE2OCAxMzYgMTYwIDEzNiAzOTh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+");
+}
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "\f09a";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}
+.fa-chain:before, .fa-link:before {
+  content: "\f0c1";
+}*/
+
+
 /*   
  * Template Name: Developer - Responsive Website Template for Developers
  * Version: 1.3

@@ -1,7 +1,7 @@
-if (typeof Analytics !== 'undefined' && typeof Analytics.initialize === 'function') {
-    // Initialize Analytics Module:
-    Analytics.initialize();
-}
+//if (typeof Analytics !== 'undefined' && typeof Analytics.initialize === 'function') {
+//    // Initialize Analytics Module:
+//    Analytics.initialize();
+//}
 
 
 //jQuery(document).ready(function ($) {
