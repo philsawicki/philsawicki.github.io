@@ -2,7 +2,7 @@
   "name": "philsawicki.github.io",
   "description": "GitHub site for philsawicki",
   "devDependencies": {
-    "gulp": "^3.8.11",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^2.2.0",
     "gulp-cleancss": "^0.2.2",
     "gulp-concat": "^2.5.2",
@@ -13,11 +13,17 @@
     "gulp-rework": "^1.0.3",
     "gulp-sitemap": "^2.1.0",
     "gulp-uglify": "^1.2.0",
-    "http-server": "^0.8.0",
+    "http-server": "^0.10.0",
     "rework-suit": "^4.0.0"
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server ./ -p 8000 -a localhost -c-1"
+    "start": "http-server ./ -p 8000 -a localhost -c-1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.70.1"
   }
 }
