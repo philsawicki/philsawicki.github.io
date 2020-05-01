@@ -18,6 +18,12 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server ./ -p 8000 -a localhost -c-1"
+    "start": "http-server ./ -p 8000 -a localhost -c-1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.316.1"
   }
 }
