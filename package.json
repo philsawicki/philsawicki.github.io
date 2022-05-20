@@ -2,8 +2,8 @@
   "name": "philsawicki.github.io",
   "description": "GitHub site for philsawicki",
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^3.0.0",
     "gulp-cleancss": "^0.2.2",
     "gulp-concat": "^2.5.2",
     "gulp-data": "^1.2.0",
